@@ -164,13 +164,93 @@ $darc-color: #222222;
             margin-bottom: 6%;
         }
         p{
-            font-family: "Roboto";
+            font-family: "Roboto", sans-serif;
             font-size: 1.08rem;
             width: 90%;
             line-height: 1.7rem;
            
         }
     }
+}
+//footer-form
+.footer{
+    height: 257%;
+    background: #161616;
+    .footer-form{
+        width: 765px;
+        margin: 0 auto;
+        color: white;
+        text-align: center;
+        .footer-form__title{
+            padding-top: 13%;
+            margin-bottom: 8%;
+            font-family: DIN Pro;
+            font-size: 2.7rem;
+            font-weight: normal;
+            text-align: center;
+            letter-spacing: -0.02em;
+            color: white;   
+        }
+    }   
+    ol{
+        counter-reset: li;
+        list-style: none;
+        text-align: left;
+        li{   
+            display: flex; 
+            align-items: center;
+            line-height: 20px;
+            margin: 52px 0 -10px 0;
+            span{
+                max-width: 566px;
+            }
+            &::before{
+                content: counter(li);
+                counter-increment: li;
+                color:$accent-color;
+                display: block;
+                text-align: center;
+                line-height: 64px;
+                height: 64px;
+                width: 64px;
+                margin-right: 4%;
+                opacity: 0.23;
+                border: 1px solid #FFFFFF;
+                border-radius: 100%;
+            }
+        }
+    }
+    input, textarea{
+        display: block;
+        background: transparent;
+        border: none;
+        margin: 0 0 0 13%;
+        border-bottom: #F7F8FA 2px solid;
+        font-size: 24px;
+        line-height: 60px;
+        width: 74%;
+        color: #FFFFFF;
+        opacity: 0.3;
+        }
+
+
+    textarea{
+        line-height: 30px;
+        margin-top: 5%;
+    }
+    button{
+        width: 574px;
+        height: 54px;
+        margin-top: 8.4%;
+        border-radius: 26px;
+        color: $accent-color;
+        background: white;
+        border: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+    }
+       
 }
 
 @import "media";
