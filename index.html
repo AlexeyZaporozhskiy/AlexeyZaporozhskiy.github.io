@@ -13,7 +13,8 @@
         <p class="header__text">Мы ищем 
             <span>талантов</span> и 
             <span>саппортов</span> в команду. Решите на какую категорию вы претендуете.</p>
-        <div class="header__button"><div class="before">+</div> <div class="header__button--content">Заполнить анкету</div>
+        <div class="header__button" 
+          ><div class="before">+</div> <div class="header__button--content">Заполнить анкету</div>
       </header>
       <!--/header class="header"-->
       <main>
@@ -70,22 +71,32 @@
           </section>
           <!--/section class="advantage"-->
       </main>
-      <footer class="footer">
-        <form action="#" class="footer-form">
+      <footer class="footer" id="footer">
+        <form action="#" name="Form" class="footer-form" onsubmit="return validation()">
           <p class="footer-form__title">Теперь расскажите о себе</p>
           <ol>
             <li class="footer-form__input-title">Фамилия и имя</li>
-              <input class="footer-form__input" placeholder="Сидоров Александр" type="text">
+              <input class="footer-form__input"  name="Name"
+              placeholder="Сидоров Александр" 
+              type="text">
             <li class="footer-form__input-title">Электронная почта</li>
-              <input class="footer-form__input" placeholder="Sidorov@yandex.ru" type="text"> 
+              <input class="footer-form__input" name="EMail" 
+              placeholder="Sidorov@yandex.ru" 
+              type="text"> 
             <li class="footer-form__input-title">Телефон </li>
-              <input class="footer-form__input"  placeholder="+7 (999)-328-14-20"   type="text"> 
+              <input class="footer-form__input"   name="Telephone" 
+              placeholder="+7 (999)-328-14-20"   
+              type="text"> 
             <li class="footer-form__input-title"><span> Какой деятельностью, не связанной с текущими проектами, вы бы хотели заниматься в рабочее время?</span></li>
-              <textarea class="footer-form__input" placeholder="Свой проект по созданию универсальной инфраструктуры строительства" type="tex"></textarea>  
+              <textarea class="footer-form__input" 
+              name="Comment" 
+              placeholder="Свой проект по созданию универсальной инфраструктуры строительства" 
+              type="tex"></textarea>  
           </ol>
           <button>Отправить</button>
         </form>
       </footer>
     </div><!--div class="wrapper"-->
+    <script src="./production/js/main.js"></script>
 </body>
-<
+</html>
