@@ -54,11 +54,6 @@ $accent-color: #F47821;
             background: #F9F9F9;
             border-radius: 100%;
         }
-        &:hover{
-            background: #F9F9F9;
-            border-radius: 111px; 
-            padding-right: 20px;    
-        }
         .header__button--content{
             margin-left: -6px;
         }
@@ -67,22 +62,49 @@ $accent-color: #F47821;
     
     }
 }
-// section class="img"
-.img{
-    background-image: url(../../production/img/Rectangle-min.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-width: 100%;
-    height: 100%;
-    margin-top: 9%;
-}
 //section class="scope"
 .scope{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    height: 1045px;
+    background-image: url(../../production/img/Rectangle-min.jpg);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-top: 9%;
     background-color: #F7F5FA;
-    min-width: 445px;
     
     .scope__block{
+        display: flex;
+        flex-wrap: wrap;
         width: 972px;
+        height: 464px;
+        background-color: #fff;
+        margin-top: 28.4%;
+    }
+    .scope__block--content{
+        width: 50%;
+        height: 50%;
+        padding: 50px 60px;
+        border: #F7F5FA solid 3px;
+        h3{
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: $accent-color;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 1.1rem;
+            margin-top: 1.1%;
+            line-height: 30px;
+            letter-spacing: -0.03em;
+
+
+        }
     }
 
 }
+
+@import "media";
