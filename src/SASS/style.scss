@@ -7,11 +7,13 @@
 }
 
 $accent-color: #F47821;
+$darc-color: #222222;
 
 .wrapper{
     max-width: 1440px;
     margin: 0 auto;
     font-family: "DINPro", sans-serif;
+
 }
 //header
 .header{
@@ -22,7 +24,7 @@ $accent-color: #F47821;
         font-size: 2.9rem;
         font-weight: normal;
         margin-top: 11.5%;
-        color: #222222;
+        color: $darc-color;
     }
     .header__text{
         margin-top: 1.3%;
@@ -43,7 +45,7 @@ $accent-color: #F47821;
         font-size: 1rem;
         font-weight: bold;
         text-transform: uppercase;
-        color: #222222;         
+        color: $darc-color;         
         cursor: pointer;
         .before{
             height: 54px;
@@ -56,10 +58,8 @@ $accent-color: #F47821;
         }
         .header__button--content{
             margin-left: -6px;
-        }
-        
-        
-    
+            font-family: "Gilroy", sans-serif;
+        }   
     }
 }
 //section class="scope"
@@ -100,11 +100,29 @@ $accent-color: #F47821;
             margin-top: 1.1%;
             line-height: 30px;
             letter-spacing: -0.03em;
-
-
+            color: $darc-color;
         }
     }
 
+}
+//section class="main-text
+.main-text{
+    min-height: 737px;
+    padding: 5.1% 23%;
+    h2{
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: -0.02em;
+        color:$darc-color;
+        font-weight: normal;
+    }
+    p{
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        line-height: 26px;
+        color: #4E4D53;
+        margin-top: 3%;
+    }
 }
 
 @import "media";
