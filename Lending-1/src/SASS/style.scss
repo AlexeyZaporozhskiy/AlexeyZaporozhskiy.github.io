@@ -1,0 +1,24 @@
+@import "fonts";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "raleway";
+    font-weight: 400;
+    max-width: 2570px;      
+}
+a,a:hover{
+    text-decoration: none;
+}
+.ul,li{
+    list-style: none;
+}
+
+@import "header";
+@import "home";
+@import "features";
+
+@import "media";

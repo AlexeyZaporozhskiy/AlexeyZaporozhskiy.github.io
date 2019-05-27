@@ -1,0 +1,43 @@
+.homeSection{
+    background: url(../img/BG.jpeg);
+    color: white;
+    .homeSection__Content{
+        background: url(../img/HandPhone.png) no-repeat bottom right;
+        
+        h1{
+            font-size: 2.2rem;
+            font-weight: 700;
+            padding-top: 36%;
+        }
+        h2{
+            font-size: 2.2rem;
+            font-weight: 300;
+            padding-top: 1%;
+        }
+        p{
+            font-size: 14px;
+            color: rgba(157, 199, 209, 255);
+            padding-top: 7%;
+            line-height: 1.71;
+            margin-bottom: 2%;
+        }
+        a{
+            display: block;
+            margin-top: 14%;
+            margin-left: -3px;
+        }
+    }
+}
+a .homeSection__Button{
+    color: white;
+    font-size: 21px;
+    border: solid 3px rgba(255, 255, 255, 0.5);
+    padding: 12px 55px;
+    border-radius: 28px;
+}
+.homeSection__BG{
+    min-height: 730px;
+    background-image: url(../img/BgroundHand.png);
+    background-position: 92.4% 71%;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,41 @@
+.header{
+    height: 120px;
+}
+
+.MainLogo{
+    color: rgba(60, 61, 66, 255);
+    font-family: "ProximaNova";
+    font-size: 30px; 
+    font-weight: 800;  
+}
+.HeaderMenu__Menu{
+    display: flex;
+    margin-bottom: 0;
+    margin-left: -8%;
+    a{
+        font-size: 14px;
+        color: rgba(60, 61, 66, 255);
+        padding-bottom: 4px;
+    }
+    a:hover{
+        border-bottom: 2px solid black;
+    }
+}
+.Headermenu__list{
+    margin-right: 30px;
+}
+.HeaderContact{
+    font-size: 18px;
+    text-align: right;
+    a{
+        color: rgba(60, 61, 66, 255);
+        i{
+            margin-right: 6px;
+            margin-left: 38px;
+            font-size: 16px;
+        }
+    }
+    
+
+    
+}
