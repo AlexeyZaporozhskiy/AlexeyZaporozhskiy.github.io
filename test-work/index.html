@@ -78,23 +78,35 @@
         <form action="#" name="Form" class="footer-form" onsubmit="return validation()">
           <p class="footer-form__title">Теперь расскажите о себе</p>
           <ol>
-            <li class="footer-form__input-title">Фамилия и имя</li>
+            <li class="footer-form__input-title">
+              <div>Фамилия и имя
               <input class="footer-form__input"  name="Name"
               placeholder="Сидоров Александр" 
               type="text">
-            <li class="footer-form__input-title">Электронная почта</li>
+              </div>
+            </li>
+            <li class="footer-form__input-title">
+              <div>Электронная почта
               <input class="footer-form__input" name="EMail" 
               placeholder="Sidorov@yandex.ru" 
-              type="text"> 
-            <li class="footer-form__input-title">Телефон </li>
+              type="text">
+              <div>
+            </li> 
+            <li class="footer-form__input-title">
+              <div>Телефон 
               <input class="footer-form__input"   name="Telephone" 
               placeholder="+7 (999)-328-14-20"   
-              type="text"> 
-            <li class="footer-form__input-title"><span> Какой деятельностью, не связанной с текущими проектами, вы бы хотели заниматься в рабочее время?</span></li>
+              type="text">
+              </div>
+            </li> 
+            <li class="footer-form__input-title">
+              <div><span> Какой деятельностью, не связанной с текущими проектами, вы бы хотели заниматься в рабочее время?</span>
               <textarea class="footer-form__input" 
               name="Comment" 
               placeholder="Свой проект по созданию универсальной инфраструктуры строительства" 
-              type="tex"></textarea>  
+              type="tex"></textarea>
+              </div>
+            </li>  
           </ol>
           <button>Отправить</button>
         </form>
